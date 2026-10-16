@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zumbi Extração — Download</title>
+<meta name="description" content="Baixe o launcher do Zumbi Extração: jogo top-down de hordas e extração. O launcher mantém o jogo sempre atualizado.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23b23a30'/><circle cx='11' cy='14' r='2.5' fill='%230b0d0a'/><circle cx='21' cy='14' r='2.5' fill='%230b0d0a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Special+Elite&display=swap">
+<style>
+  :root {
+    --bg: #0b0d0a;
+    --painel: #141712;
+    --linha: #2a2e25;
+    --texto: #d8d3c3;
+    --fraco: #8f8a7c;
+    --latao: #c9a14a;
+    --sangue: #b23a30;
+    --toxico: #74b85a;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 0%, rgba(178, 58, 48, 0.16), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 50% 100%, rgba(116, 184, 90, 0.07), transparent 70%),
+      var(--bg);
+    color: var(--texto);
+    font: 400 18px/1.55 "Barlow Semi Condensed", system-ui, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 16px 48px; }
+  h1 {
+    font: 400 clamp(44px, 9vw, 76px)/1 "Special Elite", serif;
+    margin: 0 0 12px;
+    color: var(--texto);
+    text-shadow: 0 0 24px rgba(178, 58, 48, 0.45);
+  }
+  h1 span { color: var(--sangue); }
+  .sub { color: var(--fraco); font-size: 20px; margin: 0 0 40px; max-width: 34em; }
+
+  .download {
+    background: var(--painel);
+    border: 1px solid var(--linha);
+    border-radius: 10px;
+    padding: 28px;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--sangue);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700; font-size: 22px; letter-spacing: 0.02em;
+    padding: 16px 28px;
+    border-radius: 8px;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .btn:hover { background: #c8443a; transform: translateY(-1px); }
+  .btn:focus-visible { outline: 2px solid var(--latao); outline-offset: 3px; }
+  .btn svg { width: 22px; height: 22px; }
+  .info { margin: 14px 0 0; color: var(--fraco); font-size: 16px; }
+  .info b { color: var(--latao); font-weight: 600; }
+
+  h2 {
+    font: 400 26px "Special Elite", serif;
+    color: var(--latao);
+    margin: 44px 0 14px;
+  }
+  ol { padding-left: 22px; margin: 0; }
+  ol li { margin-bottom: 8px; }
+  code, kbd {
+    font-family: ui-monospace, Consolas, monospace; font-size: 15px;
+    background: #1d211a; border: 1px solid var(--linha); border-radius: 4px; padding: 1px 6px;
+  }
+  .aviso {
+    margin-top: 18px; padding: 14px 16px;
+    border-left: 3px solid var(--latao);
+    background: rgba(201, 161, 74, 0.07);
+    font-size: 16px;
+  }
+  a { color: var(--toxico); }
+  ul.outros { list-style: none; padding: 0; margin: 0; }
+  ul.outros li { padding: 10px 0; border-bottom: 1px solid var(--linha); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  ul.outros li span { color: var(--fraco); }
+  footer { margin-top: 56px; color: var(--fraco); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Zumbi <span>Extração</span></h1>
+  <p class="sub">Saia da base, sobreviva às hordas que ficam cada vez maiores e mais escuras, junte armas e extraia vivo.</p>
+
+  <section class="download">
+    <a class="btn" id="btnLauncher" href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/ZumbiLauncher.zip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m6 10 6 6 6-6"/><path d="M4 20h16"/></svg>
+      Baixar launcher
+    </a>
+    <p class="info" id="info">Windows · <b>ZumbiLauncher.zip</b> · sempre a versão mais recente</p>
+  </section>
+
+  <h2>Como instalar</h2>
+  <ol>
+    <li>Extraia o <code>ZumbiLauncher.zip</code>. Ele cria a pasta <code>ZumbiExtracao</code>.</li>
+    <li>Abra o <code>ZumbiLauncher.exe</code>. Ele baixa o jogo e o atualiza sozinho sempre que sair versão nova.</li>
+    <li>Clique em <b>Iniciar Jogo</b>.</li>
+  </ol>
+  <p class="aviso">Se o Windows mostrar “O Windows protegeu o seu computador”, clique em <b>Mais informações → Executar assim mesmo</b>.</p>
+
+  <h2>Outros downloads</h2>
+  <ul class="outros">
+    <li><a href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/zumbi-extracao-linux.zip">Jogo para Linux</a><span>sem launcher</span></li>
+    <li><a href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/zumbi-extracao.zip">Jogo para Windows</a><span>sem launcher, não atualiza sozinho</span></li>
+    <li><a href="https://github.com/Dop66/zumbi-extracao-releases/releases">Todas as versões</a><span>GitHub</span></li>
+  </ul>
+
+  <footer>Zumbi Extração · feito com Godot</footer>
+</main>
+<script>
+  // Mostra versão, data e tamanho da release mais recente (se a API responder)
+  fetch('https://api.github.com/repos/Dop66/zumbi-extracao-releases/releases/latest')
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(rel => {
+      const asset = rel.assets.find(a => a.name === 'ZumbiLauncher.zip');
+      const data = new Date(rel.published_at).toLocaleDateString('pt-BR');
+      const partes = ['Windows', `<b>${rel.tag_name}</b>`, data];
+      if (asset) partes.push(`${(asset.size / 1048576).toFixed(0)} MB`);
+      document.getElementById('info').innerHTML = partes.join(' · ');
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>
