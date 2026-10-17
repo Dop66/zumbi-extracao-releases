@@ -21,6 +21,7 @@ Se o Windows mostrar "O Windows protegeu o seu computador", clique em **Mais inf
 
 As notas de cada versão ficam na [página de releases](https://github.com/Dop66/zumbi-extracao-releases/releases) e no site.
 
+- **v2.1.0 — Clima e sobrevivência:** clima por região (chuva, tempestade, neve), fome, sede, ferimentos, doenças, temperatura do corpo e fogueiras, zumbis que veem e ouvem, agachar, português e inglês.
 - **v2.0.0 — Aether Outbreak:** mundo aberto infinito por seed, criação do sobrevivente, mochila em grade, Altar de Poderes e Dash, Zumbis Magos, garrafas de água.
 - **v1.0.0 — Zumbi Extração:** primeira versão, com base, hordas e extração.
 
