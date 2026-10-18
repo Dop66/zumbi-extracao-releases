@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aether Outbreak — Download</title>
 <meta name="description" content="Baixe o launcher do Aether Outbreak: survival top-down em mundo aberto procedural, com cidades para saquear, magia e Zumbis Magos. O launcher mantém o jogo sempre atualizado.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%235c3a86'/><circle cx='11' cy='14' r='2.5' fill='%237ad8ff'/><circle cx='21' cy='14' r='2.5' fill='%237ad8ff'/></svg>">
+<link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Special+Elite&display=swap">
@@ -124,11 +124,11 @@
   <p class="sub">Um mundo sem fim, cidades vazias e uma magia esperando para despertar. Saqueie, sobreviva e encontre o Altar de Poderes antes que os Zumbis Magos encontrem você.</p>
 
   <section class="download">
-    <a class="btn" id="btnLauncher" href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/ZumbiLauncher.zip">
+    <a class="btn" id="btnLauncher" href="https://github.com/Dop66/aether-outbreak-releases/releases/download/launcher/AetherOutbreakLauncher-setup.exe">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m6 10 6 6 6-6"/><path d="M4 20h16"/></svg>
       Baixar para Windows
     </a>
-    <a class="btn sec" href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/zumbi-extracao-linux.zip">
+    <a class="btn sec" href="https://github.com/Dop66/aether-outbreak-releases/releases/latest/download/aether-outbreak-linux.zip">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m6 10 6 6 6-6"/><path d="M4 20h16"/></svg>
       Linux
     </a>
@@ -152,18 +152,19 @@
     <div>
       <h3>Windows (com launcher)</h3>
       <ol>
-        <li>Extraia o <code>ZumbiLauncher.zip</code>. Ele cria a pasta <code>ZumbiExtracao</code>.</li>
-        <li>Abra o <code>ZumbiLauncher.exe</code>. Ele baixa o jogo e o atualiza sozinho sempre que sair versão nova.</li>
-        <li>Clique em <b>Iniciar Jogo</b>.</li>
+        <li>Abra o <code>AetherOutbreakLauncher-setup.exe</code>. Ele instala só para o seu usuário, sem pedir administrador.</li>
+        <li>Abra o <b>Aether Outbreak Launcher</b>, escolha seu Nickname e o preset gráfico.</li>
+        <li>Clique em <b>JOGAR</b>. O launcher baixa o jogo e se atualiza sozinho sempre que sair versão nova.</li>
       </ol>
+      <p class="aviso">Tinha o launcher antigo ("Zumbi Extração")? Ele não recebe mais atualizações: instale o novo uma vez. Seus saves continuam.</p>
       <p class="aviso">Se o Windows mostrar “O Windows protegeu o seu computador”, clique em <b>Mais informações → Executar assim mesmo</b>.</p>
     </div>
     <div>
       <h3>Linux</h3>
       <ol>
-        <li>Extraia o <code>zumbi-extracao-linux.zip</code>.</li>
-        <li>Se precisar, dê permissão: <code>chmod +x ZumbiExtracao.x86_64</code></li>
-        <li>Rode <code>./ZumbiExtracao.x86_64</code></li>
+        <li>Extraia o <code>aether-outbreak-linux.zip</code>.</li>
+        <li>Se precisar, dê permissão: <code>chmod +x AetherOutbreak.x86_64</code></li>
+        <li>Rode <code>./AetherOutbreak.x86_64</code></li>
       </ol>
       <p class="aviso">No Linux não há launcher: baixe de novo aqui quando sair versão nova. Seus saves continuam.</p>
     </div>
@@ -175,8 +176,10 @@
     <kbd>Mouse</kbd><span>Mirar e atirar</span>
     <kbd>Shift</kbd><span>Dash (depois de despertar o altar)</span>
     <kbd>Ctrl</kbd><span>Agachar (menos barulho)</span>
-    <kbd>E</kbd><span>Abrir contêineres e usar o altar</span>
+    <kbd>E</kbd><span>Abrir portas e contêineres, usar o altar</span>
     <kbd>Tab</kbd><span>Mochila</span>
+    <kbd>M</kbd><span>Relógio-mapa</span>
+    <kbd>U</kbd><span>Ferimentos</span>
     <kbd>1–6</kbd><span>Barra de atalhos</span>
     <kbd>R</kbd><span>Recarregar</span>
     <kbd>Esc</kbd><span>Pausa e opções</span>
@@ -186,7 +189,24 @@
   <div id="atualizacoes">
     <!-- Conteúdo de reserva: é trocado pelas releases do GitHub quando a API responde -->
     <article class="versao">
-      <header><span class="tag">v2.1.0</span><span class="titulo">Clima e sobrevivência</span><span class="atual">ATUAL</span><span class="data">16/10/2026</span></header>
+      <header><span class="tag">v2.3.0</span><span class="titulo">Aether Outbreak: casas de verdade e o mapa no pulso</span><span class="atual">ATUAL</span><span class="data">17/10/2026</span></header>
+      <ul>
+        <li>Nome e ícone novos, e um launcher novo com notícias e atualização automática</li>
+        <li>Casas com telhado e portas que abrem, fecham e que os zumbis arrombam</li>
+        <li>Árvores, florestas, mato alto e grama</li>
+        <li>Relógio-mapa no pulso (M) com marcas</li>
+        <li>Combate sem arma (murro e empurrão) e corpo feminino na criação</li>
+      </ul>
+    </article>
+    <article class="versao">
+      <header><span class="tag">v2.2.0</span><span class="titulo">Cidades, noites e ferimentos</span><span class="data">17/10/2026</span></header>
+      <ul>
+        <li>Metrópoles, vilarejos e casas com cômodos; igrejas e cemitérios com a Alma Amaldiçoada</li>
+        <li>Noites mais perigosas, IA dos zumbis e ferimentos por parte do corpo</li>
+      </ul>
+    </article>
+    <article class="versao">
+      <header><span class="tag">v2.1.0</span><span class="titulo">Clima e sobrevivência</span><span class="data">16/10/2026</span></header>
       <ul>
         <li>Clima por região: frentes de chuva que andam com o vento, tempestades com relâmpagos e neve</li>
         <li>Fome, sede, sangramento e doenças, com itens que tratam cada um</li>
@@ -223,15 +243,15 @@
 
   <h2>Outros downloads</h2>
   <ul class="outros">
-    <li><a href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/zumbi-extracao.zip">Jogo para Windows</a><span>sem launcher, não atualiza sozinho</span></li>
-    <li><a href="https://github.com/Dop66/zumbi-extracao-releases/releases/latest/download/zumbi-extracao-linux.zip">Jogo para Linux</a><span>executável único</span></li>
-    <li><a href="https://github.com/Dop66/zumbi-extracao-releases/releases">Todas as versões</a><span>GitHub</span></li>
+    <li><a href="https://github.com/Dop66/aether-outbreak-releases/releases/latest/download/aether-outbreak.zip">Jogo para Windows</a><span>sem launcher, não atualiza sozinho</span></li>
+    <li><a href="https://github.com/Dop66/aether-outbreak-releases/releases/latest/download/aether-outbreak-linux.zip">Jogo para Linux</a><span>executável único</span></li>
+    <li><a href="https://github.com/Dop66/aether-outbreak-releases/releases">Todas as versões</a><span>GitHub</span></li>
   </ul>
 
   <footer>Aether Outbreak · feito com Godot</footer>
 </main>
 <script>
-  const API = 'https://api.github.com/repos/Dop66/zumbi-extracao-releases/releases';
+  const API = 'https://api.github.com/repos/Dop66/aether-outbreak-releases/releases';
 
   // Texto da release → HTML (só o básico: títulos, listas, negrito, código e links). Tudo é escapado antes.
   function esc(t) { return t.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
@@ -269,13 +289,15 @@
   fetch(API + '?per_page=6')
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(lista => {
-      const rels = lista.filter(r => !r.draft);
+      // O pré-release fixo "launcher" não é uma versão do jogo
+      const rels = lista.filter(r => !r.draft && !r.prerelease);
       if (!rels.length) return;
       const ultima = rels[0];
-      const launcher = ultima.assets.find(a => a.name === 'ZumbiLauncher.zip');
+      const relLauncher = lista.find(r => r.tag_name === 'launcher');
+      const launcher = relLauncher && relLauncher.assets.find(a => a.name === 'AetherOutbreakLauncher-setup.exe');
       const data = new Date(ultima.published_at).toLocaleDateString('pt-BR');
       const partes = [`Versão <b>${esc(ultima.tag_name)}</b>`, data];
-      if (launcher) partes.push(`launcher ${(launcher.size / 1048576).toFixed(0)} MB`);
+      if (launcher) partes.push(`launcher ${(launcher.size / 1048576).toFixed(1)} MB`);
       partes.push('Windows com atualização automática · Linux');
       document.getElementById('info').innerHTML = partes.join(' · ');
 
